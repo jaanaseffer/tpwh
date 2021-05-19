@@ -1,0 +1,22 @@
+{
+  "name": "tpwh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaanaseffer/tpwh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaanaseffer/tpwh/issues"
+  },
+  "homepage": "https://github.com/jaanaseffer/tpwh#readme",
+  "devDependencies": {
+    "cypress": "^7.3.0"
+  }
+}

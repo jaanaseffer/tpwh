@@ -1,0 +1,256 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 3rem;
+}
+
+.logo {
+    width: 242px;
+    height: 50px;
+}
+
+.container {
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
+    color: #000;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-weight: 600 !important;
+}
+h5 {
+    font-size: 1rem;
+    color: red;
+}
+h4 {
+    font-size: 1rem;
+}
+
+#login {
+    color: white;
+    font-weight: bold;
+    background-color: #1482FF;
+    width: 100%;
+}
+
+#add, #insert, .search, #add_row, #filter, #add_employee, #insert_bm, #insertEmployee {
+    background-color: #1482FF;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.form-control {
+    border: 1px solid black !important;
+}
+
+li.nav_item, .nav-link {
+    color: black !important;
+    font-weight: bold;
+}
+
+.nav_item--active {
+    color: #1482FF !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+span.navbar-toggler-icon {
+    background-image: url('../img/list.svg');
+}
+li.nav-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+th {
+    font-weight: 600 !important;
+}
+thead, tbody, tfoot, tr, td, th {
+    border-style: none !important;
+}
+th, td {
+    padding: 0.4rem 0.4rem !important;
+}
+input {
+    border-radius: 5px;
+}
+/* --data router view-- */
+[data-router-view] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+[data-router-view].active {
+    opacity: 1;
+    pointer-events: all;
+    position: relative !important;
+}
+#employees_work_hours td, #employeeTable td, #board_member_work_hours td, #billTable td {
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 0;
+    border-bottom: 1px solid white !important;
+    padding-left: 1rem !important;
+}
+#billTable input {
+    background-color: #1E1E1E;
+    color: white;
+    border: 1px solid #1E1E1E !important;
+}
+.error_message {
+    color: red;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+.success_message {
+    color: green;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+#add, #add_row, #add_employee {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+a.page-link {
+    background-color: #1E1E1E !important;
+    color: white !important;
+}
+.delete, .delete_employee {
+    background-color: #1E1E1E !important;
+    color: white !important;
+    border: none;
+}
+#username, #password, #login, #new_username, #new_password {
+    margin-bottom: 0.5rem;
+    border: 1px solid black;
+}
+#insertEmployee {
+    border: 1px solid white;
+}
+div#board_member_work_hours, label, div#employees_work_hours_info {
+    font-weight: bold;
+}
+#generatePassword {
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    margin-right: 0.5rem;
+}
+#employeeManaging {
+    margin-top: 1.5rem;
+}
+#billTable {
+    margin-top: 1.5rem !important;
+}
+div#employees_work_hours_filter {
+    margin-right: 5px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 0 !important;
+    margin-left: 0 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: pointer;
+}
+input#coverage_1, input#coverage_name_1, input#project_help_1, select#department, #new_username, #new_password {
+    background-color: #1E1E1E;
+    color: white;
+    border: 1px solid #1482FF;
+}
+.datepicker {
+    border: 1px solid #1482FF;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    justify-content: flex-end !important;
+}
+div.dataTables_wrapper div.dataTables_length select {
+    width: 5rem !important;
+}
+.col-5 {
+    width: 50% !important;
+}
+.employees {
+    width: 100% !important;
+}
+.billTableWrapper {
+    margin: 0 0 !important;
+    width: 60% !important;
+}
+.col-3 {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+button#filter {
+    margin-top: 1.1rem;
+}
+button.dt-button.buttons-excel.buttons-html5 {
+    margin-right: 1.5rem;
+}
+#employeeTableDiv {
+    width: 60%;
+}
+.form-select {
+    display: inherit !important;
+}
+label {
+    display: initial !important;
+}
+.dataTables_wrapper .dataTables_filter {
+    text-align: left !important;
+}
+.col-2 {
+    width: auto !important;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+    display: inline-block !important;
+    width: auto !important;
+}
+@media screen and (max-width: 995px) {
+    .col-5 {
+        width: 60% !important;
+    }
+    body {
+        margin-top: 3rem;
+    }
+    .row {
+        display: block !important;
+    }
+    button#filter {
+        margin-bottom: 1rem;
+    }
+    .dataTables_wrapper .dataTables_filter {
+        float: left !important;
+        margin-top: 0.5rem !important;
+    }
+    .container {
+        margin-top: 13rem !important;
+    }
+}
+@media screen and (max-width: 640px) {
+    .dataTables_length {
+        text-align: left !important;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .col-3 {
+        width: auto !important;
+        margin-right: 0 !important;
+    }
+    .row*> {
+        width: auto !important;
+    }
+    .row {
+        flex-wrap: nowrap !important;
+    }
+    button#filter {
+        margin-top: 0 !important;
+    }
+}
