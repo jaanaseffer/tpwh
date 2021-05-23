@@ -11,7 +11,7 @@ require_once 'connect_to_db.php';
 if(isset($_POST['username']) && isset($_POST['password'])){
 
     // Check if username and password are not empty
-    if (!empty(trim($_POST['username'])) && !empty(trim($_POST['password']))) {
+    if (!empty(addslashes(trim($_POST['username']))) && !empty(addslashes(trim($_POST['password'])))) {
 
         // Escape special characters
         $username = mysqli_real_escape_string($con,htmlspecialchars(trim($_POST['username'])));
