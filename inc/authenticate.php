@@ -14,7 +14,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     if (!empty(trim($_POST['username'])) && !empty(trim($_POST['password']))) {
 
         // Escape special characters
-        $username = mysqli_real_escape_string($con,htmlspecialchars(addslashes(trim($_POST['username'])));
+        $username = mysqli_real_escape_string($con,htmlspecialchars(addslashes(trim($_POST['username']))));
 
         // Making query, finding username from table
         $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'");
